@@ -14,14 +14,19 @@ html {
     margin: auto;
 }
 
+.main-content {
+    margin: 0 30px 0 30px;
+}
+
 body {
     max-width: 1100px;
-    margin: 0 30px 0 30px;
     font-size: 13px;
+    margin: 0px;
 }
 
 .header-main {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -50,6 +55,7 @@ body {
 
 .header-main ul {
     display: flex;
+    flex-direction: row;
     margin: 0px;
     padding: 0px;
     justify-content:space-around;
@@ -84,7 +90,7 @@ h1, h2 {
     margin-bottom: 21.4px;
 }
 
-section {
+.form, .filter {
     margin-bottom: 20px;
 }
 
@@ -100,6 +106,7 @@ section {
 
 .form p {
     display: flex;
+    flex-direction: row;
 }
 
 .form .location-icon-xl {
@@ -155,6 +162,7 @@ section {
 
 .filter {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -212,12 +220,13 @@ section {
 
 
 
-
-
-
+.renting, .activity {
+    margin-bottom: 50px;
+}
 
 .renting {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -233,6 +242,7 @@ section {
 
 .marseille-renting, .marseille-popular-renting {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -339,6 +349,7 @@ section {
 .activity-list {
     height: 350px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -356,7 +367,8 @@ section {
 .activity-list img {
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .activity-list h2 {
@@ -400,6 +412,54 @@ section {
 .activity-list .third-activity-img, .activity-list .fifth-activity-img {
     height: 105px;
 }
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+}
+
+footer div {
+    padding: 20px 0 20px 30px;
+    width: 30%;
+    flex-direction: column;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -455,6 +515,7 @@ section {
 
     .header-main ul {
         display: flex;
+        flex-direction: row;
         margin: 0px;
         padding: 0px;
         justify-content:space-around;
