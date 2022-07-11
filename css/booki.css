@@ -16,11 +16,8 @@ html {
 }
 
 body {
-    margin: 0px;
-}
-
-header {
-    padding-top: 35px;
+    margin: 0 50px 0 50px;
+    font-size: 13px;
 }
 
 .header-main {
@@ -28,8 +25,15 @@ header {
     justify-content: space-between;
 }
 
-.header-main p {
-    width: 67.5%;
+.header-main .logo {
+    padding-top: 35px;
+    width: 72.5%;
+}
+
+.header-main img {
+    height: 45px;
+    width: 95px;
+    object-fit: contain;
 }
 
 .logo_desktop {
@@ -41,43 +45,39 @@ header {
 }
 
 .header-main nav {
-    width: 30%;
+    width: 25%;
 }
 
 .header-main ul {
     display: flex;
     margin: 0px;
     padding: 0px;
-    justify-content: space-between;
-    text-align: center;
+    justify-content:space-around;
 }
 
 .header-main li {
+    padding-top: 35px;
+    text-align: center;
     width: 50%;
     list-style: none;
 }
 
-.header-main a {
-    display: block;
-    height: 0px;
-    position: relative;
-    top: -35px;
-    line-height: 140px;
-    text-decoration: none;
-    color: black;
-}
-
-.header-main a:hover {
+.header-main li:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
 
-h1 {
-    font-size: 24px;
+.header-main a {
+    text-decoration: none;
+    color: black;
 }
 
-h2 {
-    font-size: 20px;
+.header-main li:hover a {
+    color: #0065FC;
+}
+
+h1, h2 {
+    font-size: 15px;
 }
 
 .header-title p {
@@ -356,30 +356,6 @@ section {
 
 
 
-/*@media screen and (max-width: 1920px) {
-    html {
-        max-width: 1280px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    html {
-        max-width: 992px;
-    }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -389,16 +365,29 @@ section {
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .header-main nav {
-        width: 40%;
+    body {
+        font-size: 11px;
+        margin: 0 30px 0 30px;
     }
 
-    .header-title h1 {
-        font-size: 25px;
+    h1, h2 {
+        font-size: 13px;
+    }
+
+    .header-main ul {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        justify-content:space-around;
+        text-align: center;
     }
 
     .filter strong {
         width: 100%;
+    }
+
+    .filter div {
+        margin-bottom: 10px;
     }
 }
 
@@ -443,8 +432,12 @@ section {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 21px;
-        padding: 0 5% 0 5%;
+        font-size: 15px;
+        margin: 0 20px 0 20px;
+    }
+
+    h1, h2 {
+        font-size: 17px;
     }
 
     .header-main {
@@ -453,28 +446,29 @@ section {
         text-align: center;
     }
 
-    .header-main p {
+    .header-main .logo {
         margin-bottom: 45px;
     }
 
-    .logo_mobile {
-        display: block;
-        margin: auto;
-    }
-    .logo_desktop {
-        display: none;
+    .header-main img {
+        height: 90px;
+        width: 190px;
+        margin: 0 0 0 95px;
+        object-fit: contain;
     }
 
-    .header-main nav, .header-main p {
+    .header-main nav, .header-main .logo {
         width: 100%;
     }
 
     .header-main li {
-        border-top: 2px solid #F2F2F2;
+        padding: 0 0 15px 0;
+        border-bottom: 2px solid #F2F2F2;
     }
 
     .header-main li:hover {
-        border-top: 2px solid #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
 
     .header-main a {
@@ -487,7 +481,6 @@ section {
 
     .header-title h1 {
         margin-top: 35px;
-        font-size: 30px;
     }
 
 
@@ -511,7 +504,6 @@ section {
     }
 
     .form button, .form input {
-        height: 70px;
         border: 1px solid #F2F2F2;
     }
 
@@ -521,9 +513,9 @@ section {
     }
 
     .form button:nth-child(1) {
-        width: 80px;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+        width: 60px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         background-color: #F2F2F2;
         color: black;
     }
@@ -533,11 +525,11 @@ section {
     }
 
     .form button:nth-child(4) {
-        width: 80px;
+        width: 60px;
         display: inline-block;
         position: relative;
         left: -25px;
-        border-radius: 25px;
+        border-radius: 15px;
         background-color: #0065FC;
         color: white;
     }
