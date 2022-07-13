@@ -73,7 +73,7 @@ body {
     border-top: 2px solid #0065FC;
 }
 
-.header-main a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -272,8 +272,22 @@ h1, h2 {
     box-shadow: 0px 8px 15px 3px rgba(0,0,0,0.1);
 }
 
+.result:hover, .popular-result:hover, .activity-list div:not(.first-column-activity, .second-column-activity):hover {
+    -webkit-box-shadow: 0px 8px 15px 3px rgba(0,0,0,0.6); 
+    box-shadow: 0px 8px 15px 3px rgba(0,0,0,0.6);
+}
+
 .result {
+    position: relative;  /* Nécessaire pour rendre mon bloc cliquable */
     width: 32%;
+}
+
+.result > a, .activity-list div > a {  /* idem pour mon lien cliquable */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .result p {
@@ -306,7 +320,9 @@ h1, h2 {
 
 
 
-
+.marseille-popular-renting a {
+    width: 100%;
+}
 
 .popular-renting {
     width: 30%;
@@ -325,7 +341,7 @@ h1, h2 {
 .popular-result {
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 110px;
     padding: 5px;
     margin: 10px 0 10px 0;
     border-radius: 15px;
@@ -342,6 +358,14 @@ h1, h2 {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.popular-result .reajust {
+    min-width: 82px;
+}
+
+.popular-result .reajust > img {
+    width: 100%;
 }
 
 .popular-result-description {
@@ -396,6 +420,10 @@ h1, h2 {
     margin: 0px;
     padding: 10px 0 0 15px;
     font-size: 14px;
+}
+
+.activity-choice {
+    position: relative;
 }
 
 .activity-list .first-activity, .activity-list .fourth-activity {
@@ -505,6 +533,10 @@ footer a:hover {
 @media screen and (min-width: 768px) and (max-width: 916px) {
     .result {
         margin: 30px 0 30px 0;
+    }
+
+    .popular-result {
+        height: 150px;
     }
 
     .popular-result img, .popular-result-description {
@@ -661,6 +693,10 @@ footer a:hover {
         flex-direction: column-reverse;
     }
 
+    .popular-renting, .broad-renting, .activity {
+        min-width: 512px;
+    }
+
     .popular-renting {
         width: 100%;
         margin-bottom: 50px;
@@ -668,7 +704,11 @@ footer a:hover {
 
     .popular-result {
         height: 175px;
-        width: 100%; /* rend non responsive quand la width est très basse */
+        width: 100%;
+    }
+
+    .popular-result .reajust {
+        min-width: auto;
     }
 
     .popular-result img {
