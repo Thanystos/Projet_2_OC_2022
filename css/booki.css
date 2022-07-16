@@ -24,6 +24,10 @@ body {
     margin: 0px;
 }
 
+.form-header, .renting-header {
+    display: none;
+}
+
 /* HEADER */
 .header-main {
     display: flex;
@@ -83,7 +87,7 @@ a {
     color: #0065FC;
 }
 
-h1, h2 {
+h1, h2, h3, .strong {
     font-size: 15px;
 }
 
@@ -96,7 +100,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-.form p {
+.form div {
     display: flex;
     flex-direction: row;
 }
@@ -151,9 +155,10 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
-.filter strong {
+.filter h2 {
     line-height: 45px;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
+    font-weight: bold;
 }
 
 .filter button {
@@ -289,11 +294,11 @@ h1, h2 {
     padding: 0 10px 10px 10px;
 }
 
-.result-description h2, .result-description p, .popular-result-description h2, .popular-result-description p {
+.result-description h3, .result-description p, .popular-result-description h3, .popular-result-description p {
     margin-bottom: 5px;
 }
 
-.result-description h2, .popular-result-description h2 {
+.result-description h3, .popular-result-description h3 {
     font-size: 14px;
 }
 
@@ -306,7 +311,7 @@ h1, h2 {
     width: 30%;
 }
 
-.popular-renting h1 {
+.popular-renting h2 {
     position: relative;
 }
 
@@ -384,7 +389,7 @@ h1, h2 {
     border-top-right-radius: 15px;
 }
 
-.activity-list h2 {
+.activity-list h3 {
     height: 40px;
     margin: 0px;
     padding: 10px 0 0 15px;
@@ -474,7 +479,7 @@ footer a:hover {
         font-size: 11px;
     }
 
-    h1, h2 {
+    h1, h2, h3, .strong {
         font-size: 13px;
     }
 
@@ -489,7 +494,7 @@ footer a:hover {
     }
 
     /* FILTRES DE RECHERCHE */
-    .filter strong {
+    .filter .strong {
         width: 100%;
     }
 
@@ -498,7 +503,7 @@ footer a:hover {
     }
 
     /* ACTIVITÉS */
-    .activity-list h2 {
+    .activity-list h3 {
         padding-top: 2px;
     }
 }
@@ -531,7 +536,7 @@ footer a:hover {
         font-size: 19px;
     }
 
-    h1, h2 {
+    h1, h2, h3, .strong {
         font-size: 21px;
     }
 
@@ -620,8 +625,9 @@ footer a:hover {
     }
 
     /* FILTRES DE RECHERCHE */
-    .filter strong {
+    .filter .strong {
         width: 100%;
+        margin-bottom: 10px;
     }
     .filter div {
         margin-bottom: 10px;
@@ -657,7 +663,7 @@ footer a:hover {
         max-width: 350px;
     }
 
-    .popular-result-description h2, .result-description h2, .activity-list h2 {
+    .popular-result-description h3, .result-description h3, .activity-list h3 {
         font-size: 21px;
     }
     
