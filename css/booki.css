@@ -87,7 +87,7 @@ a {
     color: #0065FC;
 }
 
-h1, h2, h3, .strong {
+h1, h2, h3 {
     font-size: 15px;
 }
 
@@ -479,7 +479,7 @@ footer a:hover {
         font-size: 11px;
     }
 
-    h1, h2, h3, .strong {
+    h1, h2, h3 {
         font-size: 13px;
     }
 
@@ -536,7 +536,7 @@ footer a:hover {
         font-size: 19px;
     }
 
-    h1, h2, h3, .strong {
+    h1, h2, h3 {
         font-size: 21px;
     }
 
@@ -731,5 +731,65 @@ footer a:hover {
     footer div {
         width: 100%;
         line-height: 30px;
+    }
+}
+
+/* BREAKPOINT VIEUX MOBILE */    
+@media screen and (max-width: 570px) {
+    body {
+        font-size: 11px;
+    }
+
+    h1, h2, h3 {
+        font-size: 13px;
+    }
+
+    /* HEADER */
+    .header-main img {
+        margin-left: 40px;
+    }
+
+    /* FILTRES DE RECHERCHE */
+    .filter button:nth-child(2n-1) {
+        width: 40px;
+    }
+
+    .filter button {
+        height: 40px;
+    }
+
+    /* HÉBERGEMENT POPULAIRE ET CLASSIQUE */
+    .popular-result-description h3, .result-description h3, .activity-list h3 {
+        font-size: 15px;
+    }
+
+    .popular-renting, .broad-renting, .activity {
+        min-width: 220px;
+    }
+
+    .result, .popular-result {
+        flex-direction: column;
+        height: 275px;
+    }
+
+    .popular-result img {
+        max-width: none;
+        min-width: 170px;
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .popular-result-description .popular-note {
+        top: 80px;
+    }
+
+    /* ACTIVITÉS */
+    .activity-list {
+        line-height: normal;
+    }
+
+    .activity h2 {
+        margin-bottom: 20px;
     }
 }
