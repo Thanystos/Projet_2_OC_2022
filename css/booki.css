@@ -7,7 +7,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: 'Raleway';  /* pk ici et pas dans html ? */
+    font-family: 'Raleway';
 }
 
 html {
@@ -167,7 +167,7 @@ h1, h2, h3 {
 }
 
 .filter button:nth-child(2n-1) {
-    position: relative; /* Ne sert qu'à utiliser z-index */
+    position: relative;
     width: 45px;
     border-radius: 50%;
     background-color: #DEEBFF;
@@ -266,11 +266,11 @@ h1, h2, h3 {
 }
 
 .result {
-    position: relative;  /* Nécessaire pour rendre mon bloc cliquable */
+    position: relative;
     width: 32%;
 }
 
-.result > a, .activity-list div > a {  /* idem pour mon lien cliquable */
+.result > a, .activity-list div > a {
     position: absolute;
     top: 0;
     right: 0;
